@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>praktikum 9</title>
+</head>
+
+<body>
+
+    <div style="text-align:center">
+        <button onclick="playpause() ">play/pause</button>
+        <button onclick="makeBig() ">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="videol" width="420">
+        <source src="Pixar Vgel.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.    
+        </video>
+    </div>
+
+    <script>
+    var myVideo = document.getElementById("videol")
+    
+    function playPause() {
+        if (myVideo.pause)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    function makeBig() {
+        myVideo.width = 560;
+    }
+
+    function makeSmall() {
+        myVideo.width = 320;
+    }        
+
+    function makeNormal() {
+        myVideo.width = 420;
+    }
+            </script>
+
+</body>
+
+</html>
